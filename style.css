@@ -1,0 +1,121 @@
+@media (min-width: 1024px){
+    body {
+        background-image: linear-gradient(rgb(255, 0, 157), yellow);
+    }
+    .ninja {
+        display: none;
+    }
+}
+h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+article p {
+    color: rgb(0, 0, 0)
+  }
+  .borde-rojo {
+    border: solid 1px rgb(0, 0, 0);}
+    #uno {background-color: rgb(0, 0, 0);}
+   @font-face {
+       font-family: 'lobster';
+       src: url("lobster/Lobster-Regular.ttf");
+   }
+   p{
+       font-family: 'lobster';
+   }
+   ul {
+    list-style: square inside url("sqpurple.gif");
+}
+   .texto-grande {
+       font-size: 40px;
+   }
+   .texto-relativo {
+       font-size: 200%;
+   }
+   .a-la-derecha {
+       text-align: right;
+   }
+   .interlineado {
+       line-height: 3;
+   }
+   .header-flex{
+       display: flex;
+       flex-direction: row;
+flex-wrap: ;   
+    }
+   ul {
+    list-style-type: none;
+}
+ul li {
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px 35px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+li:hover {
+    background-color: rgb(0, 0, 0);
+    color: #000;
+    opacity: 0.5;
+}
+.menu-flex {
+    display: flex;
+    flex-flow: row nowrap;/* direction wrap */
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: gold;
+}
+div {
+    width: 50px;
+    height: 100px;
+    margin: 5px;
+    transform: translate(10px, 20px);
+    transition: height 2s;
+}
+div:hover {
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 20vw 15% repeat(3, 2fr) repeat(3, 1fr) 100px;
+    grid-template-rows: 20vh 10vh repeat(3, 2fr) 100px;
+}
+   
+@media(min-width: 500px;) body {
+} 
+/*tablet*/
+@media (min-width: 480px) and (max-width: 1023px) {
+    .ninja {
+        display: none;
+    }
+}
+/* SMARTPHONE */
+@media (max-width: 479px){
+    
+    .ninja {
+        display: block;
+        width: 100%;
+    }
+    .transicion {
+        transition: width 2s;
+    }
+    .transicion:hover {
+        width: 500px
+    }
